@@ -14,14 +14,14 @@
         <activity
             android:name=".StudentsGroupActivity"
             android:exported="false"
-            android:parentActivityName=".GroupsListActivity" /> <activity
-        android:name=".GroupsListActivity"
+            android:parentActivityName=".GroupListActivity" /> <activity
+        android:name=".GroupListActivity"
         android:exported="false"
         android:parentActivityName=".MainActivity"
         android:label="Список груп" /> <activity
         android:name=".AddStudentsGroupActivity"
         android:exported="false"
-        android:parentActivityName=".GroupsListActivity" /> <activity
+        android:parentActivityName=".GroupListActivity" /> <activity
         android:name=".MainActivity"
         android:exported="true">
         <intent-filter>

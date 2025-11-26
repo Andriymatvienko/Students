@@ -25,6 +25,7 @@ public class StudentsGroup {
     public boolean isContractExistsFlg() { return contractExistsFlg; }
     public boolean isPrivilegeExistsFlg() { return privilegeExistsFlg; }
 
+    // --- ИЗМЕНЕНИЯ ДЛЯ ЛАБ 5 ---
     private static ArrayList<StudentsGroup> groups = new ArrayList<>(
             Arrays.asList(
                     new StudentsGroup("301", "Комп'ютерних наук", 0, true, false),
@@ -35,14 +36,17 @@ public class StudentsGroup {
             )
     );
 
+    // Метод для получения всего списка (для ArrayAdapter)
     public static ArrayList<StudentsGroup> getGroups() {
         return groups;
     }
 
+    // Метод для добавления новой группы (CRUD)
     public static void addGroup(StudentsGroup group) {
         groups.add(group);
     }
 
+    // Переопределение toString() для отображения в ListView
     @Override
     public String toString() {
         return number;

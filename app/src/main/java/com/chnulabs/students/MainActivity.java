@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Метод для кнопки "СТУДЕНТСЬКІ ГРУПИ" (onBtnShowGroupsClick)
     public void onBtnShowGroupsClick(View view) {
-        Intent intent = new Intent(this, GroupsListActivity.class);
+        Intent intent = new Intent(this, GroupListActivity.class);
         startActivity(intent);
     }
 }

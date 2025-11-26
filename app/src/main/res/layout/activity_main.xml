@@ -10,18 +10,21 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp" 
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:scaleType="fitXY"
+        android:scaleType="fitCenter"   
         android:src="@drawable/univer"
         android:contentDescription="University Building"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" 
+        
+        app:layout_constraintHeight_percent="0.65"  
+        />
 
-    <Button
+   <Button
         android:id="@+id/btnShowGroups"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,6 +33,6 @@
         android:text="@string/btn_groups_txt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" /> 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

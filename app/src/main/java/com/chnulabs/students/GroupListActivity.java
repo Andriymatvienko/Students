@@ -13,7 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import androidx.appcompat.widget.ShareActionProvider;
 
-public class GroupsListActivity extends AppCompatActivity {
+public class GroupListActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class GroupsListActivity extends AppCompatActivity {
                 StudentsGroup group = (StudentsGroup) adapterView.getItemAtPosition(i);
 
                 // Запуск активности детализации
-                Intent intent = new Intent(GroupsListActivity.this, StudentsGroupActivity.class);
+                Intent intent = new Intent(GroupListActivity.this, StudentsGroupActivity.class);
                 intent.putExtra(StudentsGroupActivity.GROUP_NUMBER, group.getNumber());
                 startActivity(intent);
             }
