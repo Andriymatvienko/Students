@@ -8,11 +8,11 @@
     tools:context=".AddStudentsGroupActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView_grp_label"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="56dp"  
         android:text="@string/grp_number_txt"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,20 +27,21 @@
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        
+        app:layout_constraintBottom_toBottomOf="@+id/textView_grp_label"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/textView_grp_label"
+        app:layout_constraintTop_toTopOf="@+id/textView_grp_label"
         android:importantForAutofill="no" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView_faculty_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="@string/faculty_txt"
         android:textSize="20dp"
-        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView_grp_label"
         app:layout_constraintTop_toBottomOf="@+id/addGroupNumber" />
 
     <EditText
@@ -52,7 +53,7 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/addGroupNumber"
         app:layout_constraintStart_toStartOf="@+id/addGroupNumber"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView_faculty_label"
         android:importantForAutofill="no" />
 
     <Button

@@ -22,7 +22,7 @@
     <string name="additional_fig_txt">Додаткові відомості: </string>
     <string name="contract_fig_txt">наявність контрактників</string>
     <string name="privilege_flg_txt">наявність пільговиків</string>
-    
+
     <string name="btn_groups_txt">Студентські групи</string>
     <string name="btn_add">Додати групу</string>
     <string name="btn_share">Поділитися</string>
