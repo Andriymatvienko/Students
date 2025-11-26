@@ -25,7 +25,7 @@ public class StudentsGroup {
     public boolean isContractExistsFlg() { return contractExistsFlg; }
     public boolean isPrivilegeExistsFlg() { return privilegeExistsFlg; }
 
-    private final static ArrayList<StudentsGroup> groups = new ArrayList<>(
+    private static ArrayList<StudentsGroup> groups = new ArrayList<>(
             Arrays.asList(
                     new StudentsGroup("301", "Комп'ютерних наук", 0, true, false),
                     new StudentsGroup("302", "Комп'ютерних наук", 0, true, false),
@@ -34,6 +34,20 @@ public class StudentsGroup {
                     new StudentsGroup("501м", "Комп'ютерних наук", 1, false, true)
             )
     );
+
+    public static ArrayList<StudentsGroup> getGroups() {
+        return groups;
+    }
+
+    public static void addGroup(StudentsGroup group) {
+        groups.add(group);
+    }
+
+    @Override
+    public String toString() {
+        return number;
+    }
+    // ----------------------------
 
     public static StudentsGroup getGroup(String groupNumber) {
         for (StudentsGroup g : groups) {
